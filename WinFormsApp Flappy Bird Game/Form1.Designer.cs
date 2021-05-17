@@ -44,6 +44,7 @@ namespace WinFormsApp_Flappy_Bird_Game
             // 
             // pipeTop
             // 
+            this.pipeTop.BackColor = System.Drawing.Color.Transparent;
             this.pipeTop.Image = global::WinFormsApp_Flappy_Bird_Game.Properties.Resources.pipedown;
             this.pipeTop.Location = new System.Drawing.Point(408, -1);
             this.pipeTop.Name = "pipeTop";
@@ -64,8 +65,9 @@ namespace WinFormsApp_Flappy_Bird_Game
             // 
             // flappyBird
             // 
+            this.flappyBird.BackColor = System.Drawing.Color.Transparent;
             this.flappyBird.Image = global::WinFormsApp_Flappy_Bird_Game.Properties.Resources.bird;
-            this.flappyBird.Location = new System.Drawing.Point(90, 227);
+            this.flappyBird.Location = new System.Drawing.Point(154, 235);
             this.flappyBird.Name = "flappyBird";
             this.flappyBird.Size = new System.Drawing.Size(70, 58);
             this.flappyBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,6 +76,7 @@ namespace WinFormsApp_Flappy_Bird_Game
             // 
             // pipeBottom
             // 
+            this.pipeBottom.BackColor = System.Drawing.Color.Transparent;
             this.pipeBottom.Image = global::WinFormsApp_Flappy_Bird_Game.Properties.Resources.pipe;
             this.pipeBottom.Location = new System.Drawing.Point(419, 377);
             this.pipeBottom.Name = "pipeBottom";
@@ -85,8 +88,9 @@ namespace WinFormsApp_Flappy_Bird_Game
             // scoreText
             // 
             this.scoreText.AutoSize = true;
+            this.scoreText.BackColor = System.Drawing.Color.Wheat;
             this.scoreText.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.scoreText.Location = new System.Drawing.Point(12, 12);
+            this.scoreText.Location = new System.Drawing.Point(12, 581);
             this.scoreText.Name = "scoreText";
             this.scoreText.Size = new System.Drawing.Size(98, 32);
             this.scoreText.TabIndex = 4;
@@ -104,11 +108,11 @@ namespace WinFormsApp_Flappy_Bird_Game
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(600, 622);
-            this.Controls.Add(this.scoreText);
-            this.Controls.Add(this.pipeBottom);
             this.Controls.Add(this.flappyBird);
-            this.Controls.Add(this.ground);
+            this.Controls.Add(this.scoreText);
             this.Controls.Add(this.pipeTop);
+            this.Controls.Add(this.pipeBottom);
+            this.Controls.Add(this.ground);
             this.Name = "Form1";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gameKeyDown);
